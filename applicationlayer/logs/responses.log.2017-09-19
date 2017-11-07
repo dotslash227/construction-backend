@@ -1,0 +1,1 @@
+PID: 11050 > 2017-09-21 00:35:06,958 - response - INFO - [tweens -         log_response()] - localhost:18000 1505914506 :: User info not found :: GET /site1/supplier/retrospective :: {} :: {} :: 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.91 Safari/537.36 ::  :: 401 :: No Cache

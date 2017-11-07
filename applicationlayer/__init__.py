@@ -1,0 +1,1 @@
+from datashop import main
