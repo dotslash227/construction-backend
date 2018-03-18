@@ -7,7 +7,7 @@ class MongoCredentials:
   def __init__(self):
     self.host = URL().mongo_ip.split('http://')[1]
     self.port = URL().mongo_port
-    self.db = "construction"
+    self.db = "cons_stage"
 
 
 class MYSQLCredentials:
@@ -85,7 +85,7 @@ class URL:
 
     self.elastic_port = 9301
     self.mysql_port = 3306
-    self.mongo_port = 27027
+    self.mongo_port = 27017
     self.redis_port = 6379
     self.spark_port = 8090
     self.workflow_port = [8585, 8089]

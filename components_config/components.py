@@ -9,4 +9,9 @@ components = [
         'gitUrl': 'user',
         'branch': None
     },
+    {
+        'name': 'hr',
+        'gitURL': 'hr',
+        'branch': None
+    }
 ]
