@@ -29,7 +29,7 @@ else
   echo "sudo less ssh already done"
 fi
 
-virtualenv venv
+python2 -m virtualenv venv
 source venv/bin/activate
 mkdir supervisor
 python setup.py install
