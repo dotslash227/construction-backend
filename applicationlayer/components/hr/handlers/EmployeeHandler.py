@@ -9,7 +9,7 @@ class Employees:
         self.employee_collection = EmployeeORM().mongo_connector.apply
 
     def create_employee(self, data, site_id):
-        
+
         final_data = {
             "site_id":site_id,
             "eID":data["employee_id"],
@@ -33,3 +33,21 @@ class Employees:
 
         self.employee_collection.insert(final_data)
         return {'recorded':True,'payload':final_data}
+
+    def all_employees(self, site_id):
+        mongo_query = {'site_id':site_id}
+        employees = self.employee_collection.find(mongo_query)
+        response = list(employees)
+        return response
+
+    def get_employee(self, site_id, eid):
+        mongo_query = {'site_id':site_id, 'eID':eid}
+        employee = self.employee_collection.find(mongo_query)
+        response = list(employee)
+        return response
+
+    def delete_employee(self, site_id, eid):
+        mongo_query = {'site_id': site_id, 'eID':eid}
+        employee = self.employee_collection.remove(mongo_query, 'true')
+        response = {'deleted':'true'}
+        return response

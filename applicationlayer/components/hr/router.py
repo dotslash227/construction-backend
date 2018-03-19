@@ -8,11 +8,11 @@ class Router:
     def get_routes():
         return [
             {
-                'pattern': '{site}/hr/store-employee',
-                'name': 'employeeStore'
+                'pattern': '{site}/hr/employees',
+                'name': 'employees'
             },
             {
-                'pattern': '{site}/hr/list-all',
-                'name': 'listAll'
+                'pattern': '{site}/hr/employees/{eid}',
+                'name': 'employee-single'
             }
         ]
