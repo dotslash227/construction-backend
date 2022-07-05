@@ -10,7 +10,7 @@ pysftp == 0.2.8
 pywebhdfs == 0.4.1
 requests == 2.8.1
 sendgrid == 2.2.1
-ujson == 1.33
+ujson == 5.4.0
 ws4py == 0.3.4
 python_dateutil == 2.5.3
 mysql_connector_repackaged == 0.3.1
